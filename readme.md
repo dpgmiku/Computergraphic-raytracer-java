@@ -27,7 +27,7 @@ Jede Lösung einer Aufgabe besteht aus mindestens zwei Komponenten:
     Die Datei wird nach der *Id* der Aufgabenstellung benannt. Für die erste Aufgabe lautet der
     Dateiname z.B. [`01-red-disk.md`](doc/01-red-disk.md).
      
-2.  Ein **Java-Package** mit der Implementierung der Lösung
+2.  Ein Java-Package mit der **Implementierung** der Lösung
    
     Im Verzeichnis `src` befindet sich für jede Lösung ein Java-Package mit einer 
     ausführbaren `Main` Klasse. Die Ausführung des Programms erzeugt das in der 
@@ -38,3 +38,7 @@ Jede Lösung einer Aufgabe besteht aus mindestens zwei Komponenten:
     Im Package `tramberend7215` können sich natürlich weitere Packages befinden, die von 
     mehreren Lösungen gemeinsam verwendet werden.
 
+Die termingerechte Abgabe einer Lösung wird durch das Setzen eines *Tags* auf den entsprechenden
+*Commit* des Repositories dokumentiert. Der Name des *Tags* leitet sich aus dem *Id* der Aufgabe ab, und
+ lautet für die erste Aufgabe z.B. `abgabe-01-red-disk`.
+ 
