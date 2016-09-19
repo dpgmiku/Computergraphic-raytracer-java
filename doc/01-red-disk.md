@@ -18,7 +18,6 @@ static int renderRedSquareOnBlue(int x, int y) {
 }
 ```
 
-
 ### Hintergrund
 
 Der Hintergrund ist konstant *blau*. Für jeden Pixel (x, y) wird ein konstanter Farbwert erzeugt. 
