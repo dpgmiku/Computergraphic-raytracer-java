@@ -5,10 +5,11 @@
 Dieses Projekt ist Teil der Unterrichtsmaterialien für das 
 Modul *[Computergrafik I](https://tramberend.beuth-hochschule.de/course/winter-2016/cg1/)* 
 im *[Bachelor Medieninformatik](https://studiengang.beuth-hochschule.de/bmi/)* im Winter 2016. 
-Es gibt die Projektstruktur für die Abgabe der Übungsaufgaben
-verbindlich vor.
+Es gibt die Projektstruktur für die Abgabe der Übungsaufgaben verbindlich vor.
 
 ## Alle Lösungen
+
+Hier steht eine Liste aller abgegeben Lösungen.
 
 - [Aufgabe 1: Rote Scheibe auf Blau](doc/01-red-disk.md)
 
@@ -25,7 +26,7 @@ Jede Lösung einer Aufgabe besteht aus mindestens zwei Komponenten:
     die wichtigsten Details des Lösungsansatzes, unter Nennung aller externen Quellen, erläutert. 
     
     Die Datei wird nach der *Id* der Aufgabenstellung benannt. Für die erste Aufgabe lautet der
-    Dateiname z.B. [`01-red-disk.md`](doc/01-red-disk.md).
+    Dateiname z.B. [`a01.md`](doc/a01.md).
      
 2.  Ein Java-Package mit der **Implementierung** der Lösung
    
@@ -39,6 +40,6 @@ Jede Lösung einer Aufgabe besteht aus mindestens zwei Komponenten:
     mehreren Lösungen gemeinsam verwendet werden.
 
 Die termingerechte Abgabe einer Lösung wird durch das Setzen eines *Tags* auf den entsprechenden
-*Commit* des Repositories dokumentiert. Der Name des *Tags* leitet sich aus dem *Id* der Aufgabe ab, und
- lautet für die erste Aufgabe z.B. `abgabe-01-red-disk`.
+*Commit* des Repositories dokumentiert. Der Name des *Tags* leitet sich aus der *Id* der Aufgabe ab, und
+ lautet für die erste Aufgabe z.B. `abgabe-a01`.
  
