@@ -9,7 +9,7 @@ Es gibt die Projektstruktur für die Abgabe der Übungsaufgaben verbindlich vor.
 
 ## Alle Lösungen
 
-Hier steht eine Liste aller abgegeben Lösungen.
+Hier steht eine Liste aller abgegebenen Lösungen.
 
 - [Aufgabe 1: Rote Scheibe auf Blau](doc/01-red-disk.md)
 
