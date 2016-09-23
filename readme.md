@@ -11,7 +11,7 @@ Es gibt die Projektstruktur für die Abgabe der Übungsaufgaben verbindlich vor.
 
 Hier steht eine Liste aller abgegebenen Lösungen.
 
-- [Aufgabe 1: Rote Scheibe auf Blau](doc/01-red-disk.md)
+- [Aufgabe 1: Rote Scheibe auf Blau](doc/a01.md)
 
 ## Struktur
 
