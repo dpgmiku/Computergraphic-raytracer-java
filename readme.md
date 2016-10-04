@@ -11,7 +11,7 @@ Es gibt die Projektstruktur für die Abgabe der Übungsaufgaben verbindlich vor.
 
 Hier steht eine Liste aller abgegebenen Lösungen.
 
-- [Aufgabe 1: Rote Scheibe auf Blau](doc/01-red-disk.md)
+- [Aufgabe 1: Rote Scheibe auf Blau](doc/a01.md)
 
 ## Struktur
 
@@ -26,7 +26,7 @@ Jede Lösung einer Aufgabe besteht aus mindestens zwei Komponenten:
     die wichtigsten Details des Lösungsansatzes, unter Nennung aller externen Quellen, erläutert. 
     
     Die Datei wird nach der *Id* der Aufgabenstellung benannt. Für die erste Aufgabe lautet der
-    Dateiname z.B. [`01-red-disk.md`](doc/01-red-disk.md).
+    Dateiname z.B. [`a01.md`](doc/a01.md).
      
 2.  Ein Java-Package mit der **Implementierung** der Lösung
    
@@ -34,12 +34,12 @@ Jede Lösung einer Aufgabe besteht aus mindestens zwei Komponenten:
     ausführbaren `Main` Klasse. Die Ausführung des Programms erzeugt das in der 
     Dokumentation dargestellte Bild. Der Name des Package setzt sich aus dem Namen der Person,
     der Matrikelnummer und der *Id* der Aufgabe zusammen. Das Package für die erste Aufgabe
-    lautet für den Dozenten beispielsweise `tramberend7215.reddisk`.
+    lautet für den Dozenten beispielsweise `tramberend7215.a01`.
 
     Im Package `tramberend7215` können sich natürlich weitere Packages befinden, die von 
     mehreren Lösungen gemeinsam verwendet werden.
 
 Die termingerechte Abgabe einer Lösung wird durch das Setzen eines *Tags* auf den entsprechenden
 *Commit* des Repositories dokumentiert. Der Name des *Tags* leitet sich aus der *Id* der Aufgabe ab, und
- lautet für die erste Aufgabe z.B. `abgabe-01-red-disk`.
+ lautet für die erste Aufgabe z.B. `abgabe-a01`.
  

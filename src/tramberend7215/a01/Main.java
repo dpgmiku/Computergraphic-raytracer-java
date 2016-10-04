@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Main {
 
-	static String	name	= "doc/01-red-disk.png";
+	static String	name	= "doc/a01.png";
 	static int		width	= 480;
 	static int		height	= 270;
 
