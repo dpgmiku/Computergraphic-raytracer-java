@@ -1,11 +1,14 @@
 # Aufgabe 1
 
 Diese Datei ist ein Beispiel für den Aufbau der Dokumentation, die zusammen mit der Implementierung
-jeder Lösung zu erstellen ist.
+jeder Lösung zu erstellen ist. Der Basisname der Datei entspricht der *Id* der Aufgabe, in diesem Fall
+ist der Name also `01-red-disk.md`.
 
 ## Bild
 
-![](a01.png)
+![](01-red-disk.png)
+
+Auch das Bild ist nach der *Id* der Aufgabe benannt. In diesem Fall: `01-red-disk.png`.
 
 ## Lösung
 
