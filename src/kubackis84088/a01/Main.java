@@ -33,7 +33,7 @@ public class Main {
 	static int colorForRedSquareOnBlue(int x, int y) {		
 		int size = 100;
 		if (Math.abs(width / 2 - x) < size / 2 && Math.abs(height / 2 - y) < size / 2)
-			return new Color(255, 0, 0).getRGB();
+			return new Color(0, 255, 0).getRGB();
 		else
 			return new Color(200, 200, 255).getRGB();
 	}
