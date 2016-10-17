@@ -17,7 +17,7 @@ public class Main {
 
 		for (int x = 0; x != width; x++) {
 			for (int y = 0; y != height; y++) {
-				image.setRGB(x, y, colorForRedSquareOnBlue(x, y));
+				image.setRGB(x, y, colorForGreenCircleOnBlueToWhite(x, y));
 			}
 		}
 
@@ -30,11 +30,15 @@ public class Main {
 		}
 	}
 
-	static int colorForRedSquareOnBlue(int x, int y) {		
-		int size = 100;
-		if (Math.abs(width / 2 - x) < size / 2 && Math.abs(height / 2 - y) < size / 2)
+	static int colorForGreenCircleOnBlueToWhite(int x, int y) {		
+		int r = 50;
+		//if (Math.abs(width / 2 - x) < size/2 && Math.abs(height / 2 - y) < size/2 )
+                int temp;
+                if (Math.pow(x-width/2,2)+Math.pow(y-height/2,2)<= Math.pow(r,2))
 			return new Color(0, 255, 0).getRGB();
-		else
-			return new Color(200, 200, 255).getRGB();
+	       temp=255*y/height;
+        
+		return new Color(temp, temp, 255).getRGB();
+                        
 	}
 }
