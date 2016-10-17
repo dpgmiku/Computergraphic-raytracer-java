@@ -1,4 +1,4 @@
-package kubacki840888.a01;
+package tramberend7215.a01;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

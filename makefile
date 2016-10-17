@@ -1,4 +1,4 @@
-user = kubacki84088
+user = tramberend7215
 programs = $(wildcard src/$(user)/*/Main.java)
 
 compile: FORCE
