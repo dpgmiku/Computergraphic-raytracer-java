@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package kubacki840888.a03;
 
 import javax.imageio.ImageIO;
@@ -12,56 +11,49 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-
 /**
  *
  * @author miku
  */
 public class Main {
-    
-     static String name = "doc/a03.png";
+
+    static String name = "doc/a03.png";
     static final int WIDTH = 480;
     static final int HEIGHT = 270;
     static final double GAMMAWERT = 2.2;
-    static Kamera kamera = new Kamera(WIDTH,HEIGHT,Math.PI/2);
-    static final Color SCHWARZ = new Color(0,0,0);
-    static final Color WHITE = new Color(255,255,255);
-    static final Color EINS= new Color((int) (Math.random()*255), (int) (Math.random()*255), (int) (Math.random()*255));
-    static final Color ZWEI= new Color((int) (Math.random()*255), (int) (Math.random()*255), (int) (Math.random()*255));
- 
-    
-    
+    static Kamera kamera = new Kamera(WIDTH, HEIGHT, Math.PI / 2);
+    static final Color SCHWARZ = new Color(0, 0, 0);
+    static final Color WHITE = new Color(255, 255, 255);
+    static final Color EINS = new Color((int) (cgtools.Random.random() * 255), (int) (cgtools.Random.random() * 255), (int) (cgtools.Random.random() * 255));
+    static final Color ZWEI = new Color((int) (cgtools.Random.random() * 255), (int) (cgtools.Random.random() * 255), (int) (cgtools.Random.random() * 255));
+
     public static void main(String[] args) {
-       
+
         BufferedImage image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
-       
+
         for (int x = 0; x != WIDTH; x++) {
             for (int y = 0; y != HEIGHT; y++) {
 
-                
-         Ray ray = kamera.generateRay(x , y);
-    // System.out.println(ray.normalisierteRichtung.x + "," + ray.normalisierteRichtung.y + "," +ray.normalisierteRichtung.z);
+                Ray ray = kamera.generateRay(x, y);
+                // System.out.println(ray.normalisierteRichtung.x + "," + ray.normalisierteRichtung.y + "," +ray.normalisierteRichtung.z);
 
 // System.out.println(10*ray.normalisierteRichtung.y);
 // System.out.println(Math.round(10*ray.normalisierteRichtung.y));
 // 
- for (int t=0; t<20 ; t++){
-     Color entscheiden;
-     if (Math.round(ray.pointAt(t).y) % 2 == 0) {
-         
-        entscheiden = EINS;
+                Color entscheiden;
+                if (Math.round(ray.normalisierteRichtung.y*10) % 2 == 0) {
+
+                    entscheiden = EINS;
+
+                } else {
+                    entscheiden = ZWEI;
+
+                }
+            
+                image.setRGB(x, y, gammakorrektur(entscheiden).getRGB());
+            }
+            }
         
-         
-     }
-     else
-     {
-        entscheiden = ZWEI; 
-     
-     }
-         image.setRGB(x, y, gammakorrektur(entscheiden).getRGB());
-     
-     
- }
 
 // 
 //    long temp = Math.abs(Math.round(ray.normalisierteRichtung.y*10));
@@ -72,29 +64,18 @@ public class Main {
 //    else {
 //        
 //    image.setRGB(x,y,WHITE.getRGB());  }  
-        
-    
-              
-
-        }
-      
-   
     
 
 
-        
-        
 
-    }
-        
-         try {
+try {
             File outputfile = new File(name);
             ImageIO.write(image, "png", outputfile);
             System.out.println("Wrote image: " + name);
         } catch (IOException e) {
             System.out.println("Something went wrong: " + e);
         }
-}   
+    }
     
     
      static Color gammakorrektur(Color kolors) {

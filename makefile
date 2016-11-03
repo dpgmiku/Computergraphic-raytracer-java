@@ -6,7 +6,7 @@ compile: FORCE
 	javac -d out  $(programs)
 
 run-a01: compile
-	java -cp out $(user).a02.Main
+	java -cp out $(user).a01.Main
 
 clean: FORCE
 	rm -r out

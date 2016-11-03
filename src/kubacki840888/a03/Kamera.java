@@ -12,10 +12,10 @@ package kubacki840888.a03;
 public class Kamera {
     
     
-    double winkel;
-    double width;
-    double height;
-    Vec3 ursprung;
+    public final double winkel;
+    public final double width;
+    public final double height;
+    public final Vec3 ursprung;
    
     
     public Kamera(double x, double y, double winkel){

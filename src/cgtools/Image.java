@@ -1,0 +1,60 @@
+/* Author: Henrik Tramberend tramberend@beuth-hochschule.de */
+
+package cgtools;
+
+import java.awt.color.ColorSpace;
+import java.awt.image.BufferedImage;
+import java.awt.image.ComponentColorModel;
+import java.awt.image.ComponentSampleModel;
+import java.awt.image.DataBufferDouble;
+import java.awt.image.DataBufferUShort;
+import java.awt.image.Raster;
+import java.awt.image.SampleModel;
+import java.awt.image.WritableRaster;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class Image {
+
+    public final int width;
+    public final int height;
+
+    private BufferedImage image;
+    private WritableRaster raster;
+
+    public Image(int width, int height) {
+        this.width = width;
+        this.height = height;
+
+        ComponentColorModel ccm = new ComponentColorModel(
+                                                          ColorSpace.getInstance(ColorSpace.CS_sRGB), false, false,
+                                                          ComponentColorModel.OPAQUE, DataBufferDouble.TYPE_USHORT);
+        int[] bandOffsets = { 0, 3 * width * height, 3 * width * height * 2 };
+        SampleModel sm = new ComponentSampleModel(DataBufferUShort.TYPE_USHORT, width, height, 3,
+                                                  3 * width, bandOffsets);
+
+        image = new BufferedImage(ccm, Raster.createWritableRaster(sm, null), false, null);
+        raster = image.getRaster();
+    }
+
+    public void setPixel(int x, int y, double[] c) {
+        int[] rgb = {(int)(clamp(c[0]) * 65535.999), (int)(clamp(c[1]) * 65535.999), (int)(clamp(c[2]) * 65535.999)};
+        raster.setPixel(x, y, rgb);
+    }
+
+    public void setPixel(int x, int y, Vec3 c) {
+        int[] rgb = {(int)(clamp(c.x) * 65535.999), (int)(clamp(c.y) * 65535.999), (int)(clamp(c.z) * 65535.999)};
+        raster.setPixel(x, y, rgb);
+    }
+
+    public void write(String filename) throws IOException {
+        File outputfile = new File(filename);
+        ImageIO.write(image, "png", outputfile);
+    }
+
+    private double clamp(double v) {
+        return Math.min(Math.max(0, v), 1);
+    }
+}

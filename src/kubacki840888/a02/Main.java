@@ -27,7 +27,7 @@ public class Main {
 
         int i = 0;
         while (i < anzahlKreisen) {
-            kreisListe[i] = new Kreis((int) (Math.max(Math.random() * width - 5, 5)), (int) (Math.max(Math.random() * height - 5, 5)), new Color((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255)), (int) (Math.max(Math.random() * 50, 10)));
+            kreisListe[i] = new Kreis((int) (Math.max(cgtools.Random.random() * width - 5, 5)), (int) (Math.max(cgtools.Random.random() * height - 5, 5)), new Color((int) (cgtools.Random.random() * 255), (int) (cgtools.Random.random() * 255), (int) (cgtools.Random.random() * 255)), (int) (Math.max(cgtools.Random.random() * 50, 10)));
 
             System.out.println(kreisListe[i].getX() + "," + kreisListe[i].getY() + "," + kreisListe[i].getFarbe().getRGB() + "," + kreisListe[i].getRadius());
 
