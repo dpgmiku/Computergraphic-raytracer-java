@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package kubacki840888.a03;
+package kubacki840888.a04;
+
 
 /**
  *
@@ -35,11 +36,12 @@ public class Vec3 {
       
   }
   
-Double skalar(Vec3 skalar){
+double skalar(Vec3 skalar){
     
     
 return  x*skalar.x+y*skalar.y+z*skalar.z;
 }
+
 
 Vec3 kreuzprodukt(Vec3 v){
     
