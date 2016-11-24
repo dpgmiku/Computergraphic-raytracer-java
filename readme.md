@@ -9,5 +9,6 @@ Hier steht eine Liste aller abgegebenen Lösungen.
 -  [Aufgabe 2: Gammakorrektur und Antialiasing](doc/a02.md)
 - [Aufgabe 3: Strahlerzeugung](doc/a03.md)
 - [Aufgabe 4: Strahlschnitte](doc/a04.md)
+- [Aufgabe 5: Reflexion](doc/a05.md)
 
 
