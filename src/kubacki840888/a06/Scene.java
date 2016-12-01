@@ -3,8 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package kubacki840888.a05;
-
+package kubacki840888.a06;
 import cgtools.Vec3;
 import cgtools.Image;
 
@@ -36,7 +35,7 @@ public class Scene {
                         Hit hit = shapes.getHit(ray);
 
                         if (hit != null) {
-                            vectemp = vectemp.add(calculateRadiance(shapes,ray,4));
+                            vectemp = vectemp.add(calculateRadiance(shapes,ray,7));
 
                         }
                     }

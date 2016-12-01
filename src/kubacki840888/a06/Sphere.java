@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package kubacki840888.a05;
+package kubacki840888.a06;
 
 import cgtools.Vec3;
 
@@ -25,7 +25,9 @@ public class Sphere implements Shape {
     this.r=r;
     }
     
-  @Override
+
+    
+    @Override
     public Hit getHit(Ray r) {
         double t;
  
@@ -66,6 +68,8 @@ public class Sphere implements Shape {
 //     
 //            
 //    }
+
+
 
    
     

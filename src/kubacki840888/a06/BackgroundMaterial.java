@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package kubacki840888.a05;
+package kubacki840888.a06;
 
 import cgtools.Vec3;
 
@@ -18,10 +18,10 @@ public class BackgroundMaterial implements Material {
        Vec3 entscheiden;
                 if (Math.round(r.normalisierteRichtung.y*50) % 2 == 0) {
 
-                    entscheiden = new Vec3(1,1,1);
+                    entscheiden = new Vec3(1,1,0);
 
                 } else {
-                    entscheiden = new Vec3(0,1,0);
+                    entscheiden = new Vec3(1,1,1);
 
                 }
                 return entscheiden;
