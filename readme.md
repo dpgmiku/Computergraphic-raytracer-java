@@ -11,5 +11,6 @@ Hier steht meine Liste aller abgegebenen Lösungen.
 - [Aufgabe 4: Strahlschnitte](doc/a04.md)
 - [Aufgabe 5: Reflexion](doc/a05.md)
 - [Aufgabe 6: Bewegliche Kamera](doc/a06.md)
+- [Aufgabe 7: Instanziierung](doc/a07.md)
 
 
