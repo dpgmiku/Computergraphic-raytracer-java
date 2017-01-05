@@ -12,5 +12,6 @@ Hier steht meine Liste aller abgegebenen Lösungen.
 - [Aufgabe 5: Reflexion](doc/a05.md)
 - [Aufgabe 6: Bewegliche Kamera](doc/a06.md)
 - [Aufgabe 7: Instanziierung](doc/a07.md)
+- [Aufgabe 8: Metall und Glass](doc/a08.md)
 
 
