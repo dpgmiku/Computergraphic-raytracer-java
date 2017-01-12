@@ -87,5 +87,7 @@ public class Image {
     ImageIO.write(image, "png", outputfile);
   }
 
-  private double clamp(double v) { return Math.min(Math.max(0, v), 1); }
+	private double clamp(double v) {
+		return Math.min(Math.max(0, v), 1);
+	}
 }

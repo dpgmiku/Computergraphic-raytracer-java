@@ -13,5 +13,5 @@ Hier steht meine Liste aller abgegebenen Lösungen.
 - [Aufgabe 6: Bewegliche Kamera](doc/a06.md)
 - [Aufgabe 7: Instanziierung](doc/a07.md)
 - [Aufgabe 8: Metall und Glass](doc/a08.md)
-
+- [Aufgabe 9: Wolken am Himmel](doc/a09.md)
 

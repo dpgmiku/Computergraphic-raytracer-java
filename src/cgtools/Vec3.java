@@ -12,9 +12,9 @@ package cgtools;
  */
 public class Vec3 {
     
-    public final double x;
+    public  double x;
     public double y;
-    public final double z;
+    public  double z;
     
   public  Vec3 (double x, double y, double z){
     
@@ -39,7 +39,7 @@ public class Vec3 {
 public double skalar(Vec3 skalar){
     
     
-return  x*skalar.x+y*skalar.y+z*skalar.z;
+return  this.x*skalar.x+this.y*skalar.y+this.z*skalar.z;
 }
 
 
