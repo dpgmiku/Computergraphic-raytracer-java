@@ -15,3 +15,4 @@ Hier steht meine Liste aller abgegebenen Lösungen.
 - [Aufgabe 8: Metall und Glass](doc/a08.md)
 - [Aufgabe 9: Wolken am Himmel](doc/a09.md)
 - [Aufgabe 10: Licht und Schatten](doc/a10.md)
+- [Bonusaufgabe 1 - Zylinder und Kegel ](doc/b01.md)
